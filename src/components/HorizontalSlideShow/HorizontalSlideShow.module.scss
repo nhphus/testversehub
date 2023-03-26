@@ -1,0 +1,39 @@
+.slideShowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+}
+
+.slideShowContainer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+}
+
+.slideShowContainer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.selectedItem {
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.4s linear;
+}
+
+.unselectedItem {
+  background-color: aqua;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.4s linear;
+}
